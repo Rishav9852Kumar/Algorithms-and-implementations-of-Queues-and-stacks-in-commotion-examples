@@ -1,1 +1,12 @@
+Algorithm Time Complexity 
+ 
+       Name             best case       average case       wrost case
 
+1>    Bubble Sort        O(n^2)           O(n^2)              O(n^2)
+2>   Selection Sort      O(n)             O(n^2)              O(n^2)
+3>  Insertion Sort       O(n)             O(n^2)              O(n^2)
+4>    Merge Sort         O(nlog'n)        O(nlog'n)           O(nlog'n)
+5>    Heap Sort          O(nlog'n)        O(nlog'n)           O(nlog'n)
+6>   Quick Sort          O(nlog'n)        O(nlog'n)           O(n^2)
+7>   Bucket Sort         O(n+k)           O(n+k)              O(n^2)
+8>   Raddix Sort         O(nk)            O(nk)               O(nk)
