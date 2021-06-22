@@ -18,8 +18,9 @@ It includes all important algorithms of data structure like searching and sortin
             iv>Merge Sort
             v>Heap Sort
             vi>Quick Sort
-            vii>Raddix Sort
+            vii>Count sort
             viii>Shell Sort
+            ix>Raddix/Bucket Sort
             
               
   
