@@ -8,5 +8,5 @@ Algorithm Time Complexity
 4>    Merge Sort         O(nlog'n)        O(nlog'n)           O(nlog'n)
 5>    Heap Sort          O(nlog'n)        O(nlog'n)           O(nlog'n)
 6>   Quick Sort          O(nlog'n)        O(nlog'n)           O(n^2)
-7>   Bucket Sort         O(n+k)           O(n+k)              O(n^2)
+7>   Count Sort          O(n+k)           O(n+k)              O(n^2)
 8>   Raddix Sort         O(nk)            O(nk)               O(nk)
