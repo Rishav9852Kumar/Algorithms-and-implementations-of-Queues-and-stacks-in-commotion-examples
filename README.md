@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms  ![](https://visitor-badge.laobi.icu/badge?page_id=Rishav9852Kumar/Graphics-Lb)
 It includes all important algorithms of data structure like searching and sortings and Aplications of stacks and queues and there aplications .
 
 1-Operations performed by compiler to process any expression : -
