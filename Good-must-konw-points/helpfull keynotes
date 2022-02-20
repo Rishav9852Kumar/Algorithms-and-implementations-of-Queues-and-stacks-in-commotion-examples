@@ -1,0 +1,9 @@
+## To sort an 2d vector
+static bool comp(vector<int>& a, vector<int>& b){
+        if (a[0] != b[0]){
+            return a[0] < b[0];
+        }else{
+            return a[1] > b[1];
+        }
+    }
+sort(intervals.begin(),intervals.end(),comp);
