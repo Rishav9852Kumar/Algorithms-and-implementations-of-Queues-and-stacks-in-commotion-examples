@@ -60,50 +60,44 @@ void quick_sort_using_first_element(int arr[],int low,int high )//Quick sort usi
 }
 void quick_sort_using_mid_element(int arr[],int low,int high )//Quick sort using middle value as pivot//
 {                                              //Done//
-    display(arr,low,high);
-
-  if(high>low)
-    {int l,h;
-    l=low;
-    h=high;
-    int k;
-    int mid=low+(high-low)/2;//Taking mid value as pivot //
-    k=mid;
-    int pivot = arr[mid];//keeping constant value of pivot //
-    while(l<h)
-    {
-        while(arr[l]<=pivot)//Incrementing the l value until stuck on an element greater than pivot//
+        if(high>low)
         {
-            l++;
+            int mid=low+(high-low)/2;
+            int pivot=arr[mid];
+            int l=low;
+            int h=high;
+            while(h>=l)
+            {
+                while(l<arr.size()&&arr[l]<=pivot)
+                {
+                    l++;
+                }
+                while(h>=0&&arr[h]>=pivot)
+                {
+                    h--;
+                }
+                if(l<h)
+                {
+                    swap_(arr[l],arr[h]);
+                    l++;
+                    h--;
+                }
+            }
+            if(h>mid)
+            {
+                swap_(arr[h],arr[mid]);
+                  mid=h;
+            }else if(l<mid)
+            {
+                swap_(arr[l],arr[mid]);
+                  mid=l;
+            }
+          
+            q_sort(arr,low,mid-1);
+            q_sort(arr,mid+1,high);
+            
         }
-        while(arr[h]>pivot)//Decrementing the value of h until stuck on an element smaller than pivot//
-        {
-            h--;
-
-        }
-        if(l<h){
-
-       swap_(arr,l,h);//Swapping one smaller and one greater number at a time as compared to pivot value //
-
-        }
-        }
-
-       if(l>mid){//This means we have swapped our pivot with an element which is equal to pivot in value //
-
-        swap_(arr,h,k);//so to make the quick sort an stable sorting algorithm we swap that pivot back to maintain its order//
-       }
-        mid=h;//Adjusting mid as mid should be the position of which all left element should be smaller and right element should be greater//
-
-
-
-
-
-    display(arr,low,high);
-    quick_sort_using_mid_element(arr,low,mid-1);
-    cout<<"- - - - "<<endl;
-    quick_sort_using_mid_element(arr,mid+1,high);
-
-}
+    
 }
 void quick_sort_using_last_element(int arr[],int low,int high )//Quick sort using last value as pivot//
 {                                     //Done//
