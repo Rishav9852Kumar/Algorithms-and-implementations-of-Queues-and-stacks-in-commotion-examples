@@ -93,8 +93,8 @@ void quick_sort_using_mid_element(int arr[],int low,int high )//Quick sort using
                   mid=l;
             }
           
-            q_sort(arr,low,mid-1);
-            q_sort(arr,mid+1,high);
+           quick_sort_using_mid_element(arr,low,mid-1);
+            quick_sort_using_mid_element(arr,mid+1,high);
             
         }
     
